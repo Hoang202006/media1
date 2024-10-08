@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <title>
+            Bài Tập Media
+        </title>
+        <style>
+            body {
+  background-color: #93c4cd;
+}
+             a:link {
+               color: green;
+               background-color: transparent;
+               text-decoration: none;
+             }
+             a:visited {
+               color: rgba(11, 112, 60, 0.678);
+               background-color: transparent;
+               text-decoration: none;
+             }
+             a:hover {
+               color: rgb(18, 130, 190);
+               background-color: transparent;
+               text-decoration: underline;
+             }
+             a:active {
+               color: yellow;
+               background-color: transparent;
+               text-decoration: underline;
+             }
+             /* Style the header */
+        header {
+        background-color:  rgba(18, 146, 146, 0.752);
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: rgb(6, 28, 23);
+        }
+    
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+        float: left;
+        width: 30%;
+        height: 300px; /* only for demonstration, should be removed */
+        background: #ccc;
+        padding: 20px;
+        }
+    
+        /* Style the list inside the menu */
+        nav ul {
+        list-style-type: none;
+        padding: 0;
+        }
+    
+        article {
+        float:right;
+        padding: 10px;
+        width: 80%;
+        height: 300px; /* only for demonstration, should be removed */
+        }
+    
+        /* Clear floats after the columns */
+        section::after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+    
+        /* Style the footer */
+        footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        }
+        </style>
+    </head>
+    <body>
+        <header><h1>Bài Tập Media</h1></header>
+        <article><ul>
+            <li><h2 id="a">Ảnh</h2><img src="cdh.jpeg" alt="ảnh Đại Nội Huế"style="width:500px;height:500px;">
+                <img src="htt.jpg" alt="ảnh Hồ Thuỷ Tiên"style="width:500px;height:500px;">
+            </li>
+            <li>
+                <h2 id="v">Video</h2><video width="500" height="340"controls>
+                    <source src="tdye.mp4" type="video/mp4"></video>
+            </li>
+            <li>
+                <h2 id="u">Audio</h2><audio controls>
+                    <source src="đheok.mp3" type="audio/mpeg">
+                  </audio>
+            </li>
+            <li>
+                <h2 id="g">Google Map</h2><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.139926058147!2d107.57601407473953!3d16.468450984270397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a13267443a6d%3A0x6ad4c978e20497!2zxJDhuqFpIE7hu5lp!5e0!3m2!1svi!2s!4v1728361448246!5m2!1svi!2s" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </li>
+            <li>
+                <h2 id="Y">Youtube</h2><iframe width="500" height="355" src="https://www.youtube.com/embed/40kwLeAGg7M?si=oWL6UAZoWHxtsyLf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </li>
+        </ul>
+        <a href="index.html"><h1>Về Trang Chủ</h1></a>
+        </article>
+        <ol><h1>
+            <li><a href="#a">Ảnh</a></li><br>
+            <li><a href="#v">Video</a></li><br>
+            <li><a href="#u">Audio</a></li><br>
+            <li><a href="#g">Google Map</a></li><br>
+            <li><a href="#Y">YouTube</a></li><br>
+        </h1>
+    </ol>
+    </body>
+</html>
